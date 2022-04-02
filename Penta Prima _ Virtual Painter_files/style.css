@@ -1,0 +1,251 @@
+body {margin:25px; font:11px Verdana,Arial; background:#eee; background-image:url('../res/images/bg_tdi_logo_2.jpg');}
+ul.menu {list-style:none; margin:0; padding:0;}
+ul.menu * {margin:0; padding:0}
+ul.menu a {display:block; color:#000; text-decoration:none}
+ul.menu li {position:relative; float:left; margin-right:2px}
+ul.menu ul {position:absolute; top:26px; left:0; background:#d1d1d1; display:none; opacity:0; list-style:none}
+ul.menu ul li {position:relative; border:1px solid #aaa; border-top:none; width:148px; margin:0}
+ul.menu ul li a {display:block; padding:3px 7px 5px; background-color:#d1d1d1}
+ul.menu ul li a:hover {background-color:#c5c5c5}
+ul.menu ul ul {left:148px; top:-1px}
+ul.menu .menulink {border:1px solid #aaa; padding:5px 7px 7px; font-weight:bold; background:url(images/header.gif); width:134px}
+ul.menu .menulink:hover, ul.menu .menuhover {background:url(images/header_over.gif)}
+ul.menu .sub {background:#d1d1d1 url(images/arrow.gif) 136px 8px no-repeat}
+ul.menu .topline {border-top:1px solid #aaa}
+label.title {
+	font-weight:bold;
+}
+
+/* Membuat Object Tidak ikut ke-Scroll */
+.podbar {
+	bottom:50;
+	left:30px;
+	position:fixed;
+	z-index:100;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop+
+	(document.documentElement.clientHeight-this.offsetHeight)));
+		
+}
+
+.podbar_outdoor {
+	bottom:50;
+	left:30px;
+	position:fixed;
+	z-index:100;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop+
+	(document.documentElement.clientHeight-this.offsetHeight)));
+		
+}
+
+.painted_object {
+	position:absolute; 
+	left:0px; 
+	top:0px; 
+	/*
+	left:155px; 
+	top:81px; 
+	*/
+	z-index:1;
+}
+
+div.notif {
+	margin-bottom:15px; color:#c17584; background-image: url('../../res/images/warning-icon.png');  background-repeat: no-repeat; background-position: left center;
+}
+
+div.preview_color {
+	background-color:; width:75px; height:50px; margin-bottom:10px; float:left; margin-right:10px; border:1px solid #eee;
+}
+
+div.category_color {
+	width:20px; height:20px; float:left;
+	border-right:2px white solid;
+}
+
+.font16 {
+	font-size:16px;
+}
+
+div.sub_menu {
+	float:left; margin-right:7px; border:5px transparent solid;
+}
+
+input.search_bar {
+	margin-top:10px; width:125px;
+}
+
+.btn_cari {
+	margin-bottom:7px; display:none;
+}
+
+/* =================== Button Class =============================== */
+div.button_blue {
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+
+-moz-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+
+background: -moz-linear-gradient(19% 65% 90deg,#0087B4, #0099CC, #0099CC 51%);
+
+background: -webkit-gradient(linear, 0% 45%, 0% 60%, from(#0099CC), to(#0087B4));
+
+color:#f0f0f0;
+float:left;
+font-family:arial,helvetica,sans-serif;
+font-size:12px;
+font-weight:bold;
+padding:2px 20px;
+text-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
+border: 1px solid #267ed4;
+}
+
+div.button_blue:hover{
+background: -moz-linear-gradient(19% 65% 90deg,#0082AD, #0099CC, #0099CC 51%);
+background: -webkit-gradient(linear, 0% 45%, 0% 60%, from(#0099CC), to(#0082AD));
+color: #c2c0c0;
+cursor: pointer;
+}
+
+/* Button Orange */
+
+div.button_orange{
+-moz-border-radius:5px;
+-webkit-border-radius:5px; 
+border-radius:5px;
+
+-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+-webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+
+background: -moz-linear-gradient(19% 75% 90deg, #FF4D01, #FF8924);
+/*background-image:url('./images/lup.png');*/
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF8924), to(#FF4D01));
+
+color:#fff;
+float:left;
+font-family:arial,helvetica,sans-serif;
+font-size:10px;
+font-weight:bold;
+padding:2px 5px;
+margin-left:5px;
+}
+
+div.button_orange:hover{
+background: -moz-linear-gradient(19% 75% 90deg, #EB4701, #F58423);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F58423), to(#EB4701));
+cursor: pointer;
+}
+
+/* Button Yellow */
+
+div.button_yellow{
+-moz-border-radius:5px;
+-webkit-border-radius:5px; 
+border-radius:5px;
+
+background: -moz-linear-gradient(0% 45% 90deg,#E0B324, #FAD121, #FFE678 100%);
+
+background: -webkit-gradient(linear, 0% 0%, 0% 65%, from(#FFE678), to(#E0B324), color-stop(.2,#FAD121));
+
+color:#312f30;
+float:left;
+font-family:arial,helvetica,sans-serif;
+font-size:11px;
+font-weight:bold;
+padding:5px 10px;
+text-shadow:1px 1px 0 #ebd663;
+margin-top:10px;
+}
+
+div.button_yellow:hover{
+background: -moz-linear-gradient(40% 51% 90deg,#D4A922, #EBC41F, #EDD670 100%);
+background: -webkit-gradient(linear, 0% 0%, 0% 65%, from(#EDD670), to(#D4A922), color-stop(.2,#EBC41F));
+cursor: pointer;
+}
+
+/* =================== End Of Button Class =============================== */
+
+/* ======================= CALLOUT ========================== */
+label.balloon {
+	outline:none;
+	text-decoration:none;
+	color: #00F; 
+}
+
+label.balloon strong {
+	line-height:30px;
+	font-family: Candara, Tahoma, Geneva, sans-serif; 
+	font-size: 1.2em; 
+	font-weight: bold;
+}
+
+label.templates {
+	cursor: pointer;
+}
+
+label.templates:hover {
+	color:red;
+}
+
+label.balloon:hover {
+	text-decoration:none;
+	text-outline:none;
+	color: #F06;
+} 
+
+
+label.balloon:hover img {
+	text-decoration:none;
+	text-outline:none;
+	border: none;
+} 
+
+label.balloon img {
+	border: none;
+} 
+
+label.balloon div {
+    z-index: 10;
+	display: none; 
+	padding: 5px 5px;
+    margin-top: -30px; 
+	margin-left: 10px;
+    min-width: 125px; 
+	line-height: 16px;
+	border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 6px 6px 10px #CCC;
+    -webkit-box-shadow: 6px 6px 10px #CCC;
+    box-shadow: 6px 6px 10px #CCC;
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	/*font-size: .8em;*/
+	font-size:14px;
+}
+
+label.balloon:hover div {
+    display: inline; 
+	position: absolute; 
+	color: #111;
+    border: 1px solid #DCA; 
+	background: #fffAF0;
+}
+
+label.balloon:hover li{
+	list-style:none;
+}
+
+.arrow{
+	z-index: 20;
+	position: absolute;
+	top: 30px;
+	border: 0;
+	left: -12px;
+	background-color: transparent;
+}
+
+/* =============== End Of CallOut =================== */
